@@ -1,0 +1,12 @@
+specVersion: "v1"
+serviceId: "ecocity-beta11-main"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "ecocity-beta11-main-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
